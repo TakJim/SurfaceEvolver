@@ -1,5 +1,5 @@
 # SurfaceEvolver
-##新しいmethod_instance: spotの定義
+## 新しいmethod_instance: spotの定義
 '''
 METHOD_INSTANCE spot METHOD star_perp_sq_mean_curvature
 QUANTITY benergy1 ENERGY  modulus 0.0795774715459477  method spot
@@ -8,12 +8,12 @@ QUANTITY benergy1 ENERGY  modulus 0.0795774715459477  method spot
 
 対象とするfacet, それに属するedges, それに属するverticesにattributeを追記
 
-##spotとなるfacetだけをrefineする
+## spotとなるfacetだけをrefineする
 '''
 refine facet ff where min(ff.vertices, spot) > 0 //全てのverticesにspotを持つfacetをrefine
 '''
 
-###attributeを持つedgesを表示
+### attributeを持つedgesを表示
 '''
 list vertex where spot
 '''
