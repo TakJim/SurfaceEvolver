@@ -1,0 +1,44 @@
+Surface Evolver Version 2.70, August 25, 2013, 64-bit
+
+Enter command: 
+Enter command: metric_conversion off
+Metric conversion OFF. (was off)
+Enter command: autorecalc on
+Autorecalc ON. (was on)
+Enter command: gv_binary off
+Geomview binary mode OFF. (was off)
+Enter command: gravity off
+Gravity OFF. (was off)
+Enter command: 
+Enter command: 
+Enter command: s
+Graphics command: q
+Enter command: define face attribute spot real
+syntax error
+
+ERROR 2379: Syntax: DEFINE name [REAL|INTEGER]
+ or:    DEFINE elementtype ATTRIBUTE name REAL|INTEGER  [ dimension ]   
+  Input line so far: 
+define face attribute spot 
+
+Enter command: define face attribute spot1 real
+Enter command: set facet[1] spot1 1
+Enter command: list facet where spot1
+// Id    edges
+  1   1 -962 -2 spot   /*area 22.9699*/ spot1  1
+Enter command: set facet where spot1 color red
+Enter command: refine facet where spot1
+Enter command: refine facet where spot1
+Enter command: refine edges ee where max(ee.facets,spot1) > 0 
+Enter command: g
+WARNING 1055: Volume or quantity constraints don't converge in 10 projections.
+Total difference 627888 times tolerance
+
+  1. area:  36851.5796267752 energy:  95.2958042780992  scale: 0.00000
+Enter command: g
+WARNING 1055: Volume or quantity constraints don't converge in 10 projections.
+Total difference 8880.46 times tolerance
+
+  1. area:  36907.0313317616 energy:  100.931018532840  scale: 0.00000
+Enter command: q
+Enter new datafile name (none to continue, q to quit): q
