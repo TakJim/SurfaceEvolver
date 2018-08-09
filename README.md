@@ -12,8 +12,8 @@
 
 1. 曲げ弾性エネルギーの計算
 2. BCモデルのエネルギープロファイルの計算
-3. [spikeを自動的に押し込む方法](https://github.com/TakJim/SurfaceEvolver/tree/master/fixspike)
-4. [spikeの原因となる接続数が4以下のvertexへの対処](https://github.com/TakJim/SurfaceEvolver/tree/master/swapspike)
+3. [spikeを検出し、その原因となる接続数が4以下のvertexを修正する](https://github.com/TakJim/SurfaceEvolver/tree/master/swapspike)
+4. [spikeを自動的に押し戻す方法](https://github.com/TakJim/SurfaceEvolver/tree/master/fixspike)
 5. ADEモデルについて
 6. BCモデルからADEモデルへの拡張
 7. Mathematicaを用いたBCモデルエネルギープロファイルからのADE相図作成
