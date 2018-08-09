@@ -5,10 +5,10 @@
 ## spikeの押し戻し
     fixspike:={
         asc:=avg(vertex,sqcurve);
-	foreach vertex vv where vv.sqcurve > 10*asc do {raw_vertex_average vv}5;
-	foreach vertex vv where vv.sqcurve > 5*asc do {raw_vertex_average vv}5;
-	V 10;
-	}
+        foreach vertex vv where vv.sqcurve > 10*asc do {raw_vertex_average vv}5;
+        foreach vertex vv where vv.sqcurve > 5*asc do {raw_vertex_average vv}5;
+        V 10;
+    }
 
 このコマンドでは、先ほどの`showsc`と同様にascを計算した後、それぞれのvertexのsqcurveに対して、ascと比較している。まずこの比が10より大きい、大きなspikeに対して`raw_vertex_average`（体積や面積のconstraintを無視した平均化）を行うことで、強制的に隣り合うvertexの中心にvertexを移動している。次に、より小さなspikeに対しても同様の処理を行い、最後に全体のvertexを平均している。
 
@@ -20,14 +20,14 @@ spikeは`g`コマンドを行った後に生じるので、`g`コマンドを複
     c0 := {
         j 0.01; 
         g 10; 
-	u; 
-	V 10; 
-	g 10; 
-	asc := avg(vertices ,sqcurve); 
-	msc := max(vertices ,sqcurve); 
-	if ( msc > 2*asc ) then fixspike; 
-	es 2; 
-	V 10
+        u; 
+        V 10; 
+        g 10; 
+        asc := avg(vertices ,sqcurve); 
+        msc := max(vertices ,sqcurve); 
+        if ( msc > 2*asc ) then fixspike; 
+        es 2; 
+        V 10
     }
 
 ※このコマンドは`fixspike`の後に`g`を行っていないため、必ず`fixspike`を用いない安定化コマンドを、このコマンドの後に使うこと。
