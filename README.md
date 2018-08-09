@@ -12,7 +12,7 @@
 
 1. 曲げ弾性エネルギーの計算
 2. BCモデルのエネルギープロファイルの計算
-[3. spikeの原因となる接続数が4以下のvertexへの対処](https://github.com/TakJim/SurfaceEvolver/tree/master/3)
+3. [spikeの原因となる接続数が4以下のvertexへの対処](https://github.com/TakJim/SurfaceEvolver/tree/master/3)
 4. spikeを自動的に押し込む方法
 5. ADEモデルについて
 6. BCモデルからADEモデルへの拡張
