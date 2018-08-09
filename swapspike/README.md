@@ -5,9 +5,9 @@ spikeであるvertexは、曲率が平均と比べ異常値を示すため、sqc
 ## spikeの検出
     showsc:= {
         asc:=avg(vertex,sqcurve);
-	msc:=max(vertex,sqcurve);
-	rsc:=msc/asc;
-	printf "asc=%g\nmsc=%g\nrate=%g\n",asc,msc,rsc;
+        msc:=max(vertex,sqcurve);
+        rsc:=msc/asc;
+        printf "asc=%g\nmsc=%g\nrate=%g\n",asc,msc,rsc;
     }
 
 このコマンドでは、sqcurveの平均であるasc、全vertexの中で最も大きいsqcurveであるmscから、2つの比rscを計算している。このrscが異常に大きな値を示したら、spikeが存在していると言えるはずである。経験上5以下の値であればspikeは存在していない。  
