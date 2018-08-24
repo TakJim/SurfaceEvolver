@@ -15,7 +15,7 @@
 3. [spikeを自動的に押し戻す方法](https://github.com/TakJim/SurfaceEvolver/tree/master/fixspike)
 4. [曲げ弾性エネルギーの計算](https://github.com/TakJim/SurfaceEvolver/tree/master/bendingEnergy)
 5. [BCモデルのエネルギープロファイルの計算](https://github.com/TakJim/SurfaceEvolver/tree/master/BCenergy)
-6. ADEモデルについて
+6. [ADEモデルについて](https://github.com/TakJim/SurfaceEvolver/tree/master/ADEmodel)
 7. BCモデルからADEモデルへの拡張
 8. Mathematicaを用いたBCモデルエネルギープロファイルからのADE相図作成
 9. 2次元顕微鏡画像に対し、3次元SE形状を照らし合わせる方法について
