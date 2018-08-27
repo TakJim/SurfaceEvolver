@@ -12,11 +12,11 @@
 
 1. ベシクルモデルの作成とv、daのパラメータ変化による変形
 2. [spikeを検出し、その原因となる接続数が4以下のvertexを修正する](/swapspike)
-3. [spikeを自動的に押し戻す方法](https://github.com/TakJim/SurfaceEvolver/tree/master/fixspike)
-4. [曲げ弾性エネルギーの計算](https://github.com/TakJim/SurfaceEvolver/tree/master/bendingEnergy)
-5. [BCモデルのエネルギープロファイルの計算](https://github.com/TakJim/SurfaceEvolver/tree/master/BCenergy)
-6. [ADEモデルについて](https://github.com/TakJim/SurfaceEvolver/tree/master/ADEmodel)
-7. [BCモデルからADEモデルへの拡張（Mathematica）](https://github.com/TakJim/SurfaceEvolver/tree/master/BCtoADE)
+3. [spikeを自動的に押し戻す方法](/fixspike)
+4. [曲げ弾性エネルギーの計算](/bendingEnergy)
+5. [BCモデルのエネルギープロファイルの計算](/BCenergy)
+6. [ADEモデルについて](/ADEmodel)
+7. [BCモデルからADEモデルへの拡張（Mathematica）](/BCtoADE)
 8. BCモデルエネルギープロファイルからのADE相図作成（Mathematica）
 9. 2次元顕微鏡画像に対し、3次元SE形状を照らし合わせる方法について
 10. その他
