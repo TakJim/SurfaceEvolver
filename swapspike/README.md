@@ -35,4 +35,4 @@ test_sphere.dmpはcube.feから`gogo`コマンドで作成した球で、接続�
 その後、`es`コマンドを用いながら変形させた場合、先ほどと比べて形状の変化が自然になることを確認してください（変形結果は別ファイルに保存してください）。  
 
 
-[chibaによる解答解説](swapspike/chiba)
+[chibaによる解答解説](/swapspike/chiba)
