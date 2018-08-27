@@ -16,7 +16,7 @@
 4. [曲げ弾性エネルギーの計算](https://github.com/TakJim/SurfaceEvolver/tree/master/bendingEnergy)
 5. [BCモデルのエネルギープロファイルの計算](https://github.com/TakJim/SurfaceEvolver/tree/master/BCenergy)
 6. [ADEモデルについて](https://github.com/TakJim/SurfaceEvolver/tree/master/ADEmodel)
-7. BCモデルからADEモデルへの拡張
+7. [BCモデルからADEモデルへの拡張](https://github.com/TakJim/SurfaceEvolver/tree/master/BCtoADE)
 8. Mathematicaを用いたBCモデルエネルギープロファイルからのADE相図作成
 9. 2次元顕微鏡画像に対し、3次元SE形状を照らし合わせる方法について
 10. その他
