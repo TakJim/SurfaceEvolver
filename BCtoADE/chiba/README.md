@@ -12,9 +12,7 @@
    Bene[q_, da0_, da_] := IDATA[da] + q (da - da0)^2
    ```
    これはすなわち、
-   ```math
-   \w_{total} =
-   ```
+  ![w_total](https://github.com/chibatoshikaze/SurfaceEvolver/blob/patch-4/BCtoADE/chiba/w_total_math.png)
    ![ADE_energy_profile](https://github.com/chibatoshikaze/SurfaceEvolver/blob/patch-4/BCtoADE/chiba/ADE_energy_profile.png)
   　これについてエネルギーの最小化、
    ```
