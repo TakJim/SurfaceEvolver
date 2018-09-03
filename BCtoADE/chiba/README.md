@@ -11,6 +11,11 @@
    ```
    Bene[q_, da0_, da_] := IDATA[da] + q (da - da0)^2
    ```
+   これはすなわち、
+   ```math
+   \w_{total} =
+   ```
+   ![ADE_energy_profile](https://github.com/chibatoshikaze/SurfaceEvolver/blob/patch-4/BCtoADE/chiba/ADE_energy_profile.png)
   　これについてエネルギーの最小化、
    ```
    ADE[q_, da0_] := MinValue[{Bene[q, da0, da], 0.512479 < da < 1.36808}, da]
@@ -22,7 +27,7 @@
    を計算すれば良い。  
    
 　下図に`Dela[q_, daθ_]`の結果をプロットした。
-![v072_phase](https://github.com/chibatoshikaze/SurfaceEvolver/blob/patch-4/BCtoADE/chiba/v072_phase.png)
+![v072_phase](https://github.com/chibatoshikaze/SurfaceEvolver/blob/patch-4/BCtoADE/chiba/v072_argmin.png)
 　
   この相図から転移点を読み取り、ADEモデルの相図にプロットした。
 ![plot_to_ADE_phase.png](https://github.com/chibatoshikaze/SurfaceEvolver/blob/patch-4/BCtoADE/chiba/plot_to_ADE_phase.png)
