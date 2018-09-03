@@ -19,13 +19,16 @@
    これをいくつかプロットして、BCモデルのエネルギープロファイルと重ねてみる。
    ![ADE_energy_profile](https://github.com/chibatoshikaze/SurfaceEvolver/blob/patch-4/BCtoADE/chiba/ADE_para.png)
   　
-   da_0 = 0.90のとき、図の(ⅰ)、(ⅱ)について比較してみると、  
-   (ⅰ)da = da_oblateのとき  
+   da_0 = 0.90のとき、図の(ⅰ)、(ⅱ)をみてみよう。
+   (ⅰ)は放物線q(da_0 - da_oblate)^2の点であるからda=da_oblateである。  
+   一方、(ⅱ)は放物線q(da_0 - da_prolate)^2の点であるからda=da_prolateである。
    
+   da_0 = 0.90上では、(ⅰ)のほうがエネルギーを小さくできるので、daはda_oblateをとろうとする。また、同じda_0上でより小さいエネルギーを取る状態があれば、daはその値をとるだろう。  
+   このようにして各da_0上での最小エネルギーをプロットすることを考えれば、mathematicaでの計算、
    ```
    ADE[q_, da0_] := MinValue[{Bene[q, da0, da], 0.512479 < da < 1.36808}, da]
    ```
-  　と最小値をとる変数の位置、
+  これは上図のような放物線を、データ点すべてでプロットしたのち、その包絡線をADEモデルのエネルギープロファイルとしてプロットしている。
    ```
    Dela[q_, da0_] := ArgMin[{Bene[q, da0, da], 0.512479 < da < 1.36808}, da]
    ```
