@@ -13,7 +13,7 @@
    Bene[q_, da0_, da_] := IDATA[da] + q(da - da0)^2
    ```
    この関数が、それぞれの最適膜面積差da_0で取りうる最小値をプロットすることについて考える。  
-   daがBCモデルのデータ点を任意に取れるとすれば、第二項目はそれぞれ、daを頂点とするda_0の放物線を表す。  
+   daがBCモデルのデータ点を任意に取れるとすれば、第二項目はdaを頂点とするda_0の放物線を表す。  
    これをいくつかプロットして、BCモデルのエネルギープロファイルと重ねてみる。
    ![ADE_energy_profile](https://github.com/chibatoshikaze/SurfaceEvolver/blob/patch-4/BCtoADE/chiba/ADE_para.png)
   　
