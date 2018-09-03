@@ -3,7 +3,7 @@
 　v072_ene_profile.txtはBCモデルにおける、v=0.72のエネルギープロファイルのデータである。これを用いてmathematicaでADEモデルのエネルギープロファイルのプロット、及びv=0.72での相図を作成した。  
  ***
  
- 　mathematica上では、まずBCモデルのデータ点を連続的な関数にフィッティングする。
+ 　まずBCモデルのデータ点を連続的な関数にフィッティングする。
    ```
    IDATA = Interpolation[DATA, InterpolationOrder -> 1]
    ```      
