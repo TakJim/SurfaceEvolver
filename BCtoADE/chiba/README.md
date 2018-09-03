@@ -19,6 +19,9 @@
    これをいくつかプロットして、BCモデルのエネルギープロファイルと重ねてみる。
    ![ADE_energy_profile](https://github.com/chibatoshikaze/SurfaceEvolver/blob/patch-4/BCtoADE/chiba/ADE_para.png)
   　
+   da_0 = 0.90のとき、図の(ⅰ)、(ⅱ)について比較してみると、  
+   (ⅰ)da = da_oblateのとき  
+   
    ```
    ADE[q_, da0_] := MinValue[{Bene[q, da0, da], 0.512479 < da < 1.36808}, da]
    ```
