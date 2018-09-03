@@ -3,16 +3,17 @@
 　v072_ene_profile.txtはBCモデルにおける、v=0.72のエネルギープロファイルのデータである。これを用いてmathematicaでADEモデルのエネルギープロファイルのプロット、及びv=0.72での相図を作成した。  
  
  
- 　mathematica上では、まずBCモデルのデータに対して、データ点どうしの補間、
+ 　mathematica上では、まずBCモデルのデータに対して、データ点どうしの補間を行う。
    ```
    IDATA = Interpolation[DATA, InterpolationOrder -> 1]
    ```
-  　およびADEモデルのエネルギーを定義、
+   次にADEモデルのエネルギー、
+  ![w_total](https://github.com/chibatoshikaze/SurfaceEvolver/blob/patch-4/BCtoADE/chiba/w_total_math.png)
+ 　これをmathematicaで定義する。
    ```
    Bene[q_, da0_, da_] := IDATA[da] + q (da - da0)^2
    ```
-   これはすなわち、
-  ![w_total](https://github.com/chibatoshikaze/SurfaceEvolver/blob/patch-4/BCtoADE/chiba/w_total_math.png)
+   
    ![ADE_energy_profile](https://github.com/chibatoshikaze/SurfaceEvolver/blob/patch-4/BCtoADE/chiba/ADE_energy_profile.png)
   　これについてエネルギーの最小化、
    ```
