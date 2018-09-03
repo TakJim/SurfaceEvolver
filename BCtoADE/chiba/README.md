@@ -21,7 +21,8 @@
    ```
    を計算すれば良い。  
    
-　下図に`Dela[q_, daθ_]`の結果をプロットした。すなわちADEモデルにおけるv=0.72の相図である。
+　下図に`Dela[q_, daθ_]`の結果をプロットした。すなわちADEモデルのv=0.72における相図である。
 ![v072_phase](https://github.com/chibatoshikaze/SurfaceEvolver/blob/patch-4/BCtoADE/chiba/v072_phase.png)
-　下図(plot_to_ADE_phase.png)には、ADEモデルの相図に、今回計算したv=0.72での転移点をプロットがプロットしてある。
+　
+  この相図から転移点を読み取り、ADEモデルの相図にプロットした。
 ![plot_to_ADE_phase.png](https://github.com/chibatoshikaze/SurfaceEvolver/blob/patch-4/BCtoADE/chiba/plot_to_ADE_phase.png)
