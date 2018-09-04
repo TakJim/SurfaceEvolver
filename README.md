@@ -18,5 +18,5 @@
 6. [ADEモデルについて](/ADEmodel)
 7. [BCモデルからADEモデルへの拡張（Mathematica）](/BCtoADE)
 8. BCモデルエネルギープロファイルからのADE相図作成（Mathematica）
-9. 2次元顕微鏡画像に対し、3次元SE形状を照らし合わせる方法について
+9. [2次元顕微鏡画像に対し、3次元SE形状を照らし合わせる方法について](/fitShapeTo2Dimage)
 10. その他
