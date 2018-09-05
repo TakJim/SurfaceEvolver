@@ -1,36 +1,31 @@
 # 課題の手引き
 ## 弾性エネルギーと試行回数のプロット
-test_spike.dmpは安定化する前の状態である。ここに以下の繰り返しコマンドを入力する。     
+bene_v0.76_dela1.024.dmpはdaが1.024で安定している。このデータのdaが0.001増えるようにmciを設定したとき、エネルギーが最小値を取るまで必要な安定化コマンドの回数をカウントした。また、refinementコマンド`r`が2回と3回で場合分けした。以下の繰り返しのコマンドで回数を記録する。     
 試行回数ごとに出力先ファイルの名前も変更しておくと良い。
-
-なお安定化の際にコマンド`j`の強度がサイクルごとに減衰するように設定してある。
 ```
 cycl :=
 {
 quiet ON;
 
 cycle := 0;
-out_ene := {printf "%g %g\n",cycle,bene.value >> "bene_cycle100.txt"};
+out_ene := {printf "%g %g\n",cycle,bene.value >> "bene_cycle1000.txt"};
 
 
-out_ene;
+//out_ene;
 
-while(cycle <= 100) do
+while(cycle <= 1000) do
 {
 	cycle += 1;
-	fixspike;
-	es 2;
-	u;
-	g 30;
-	V 10;
-	j 10^(-1-cycle);
-	out_ene
-	
+	{g 10;V 5;u};
+	out_ene;
 };
 
 quiet OFF
 }
-```  
-bene_cycle.epsには試行回数が100回と1000回のデータがそれぞれプロットされている。
-![bene_cycle](https://github.com/chibatoshikaze/SurfaceEvolver/blob/patch-3/bendingEnergy/chiba/sec4_bene_cycle.png)
-プロットの結果から、安定化コマンドの目安は500回ほどであると思われる。
+```
+
+`r`2回
+![bene_cycle](https://github.com/chibatoshikaze/SurfaceEvolver/blob/patch-4/bendingEnergy/chiba/bene_r2_1000.png)
+`r`3回
+![bene r3](https://github.com/chibatoshikaze/SurfaceEvolver/blob/patch-4/bendingEnergy/chiba/bene_r3_1000.png)
+安定化コマンドの目安として、refineが2回のときは50回ほど、refineが3回のときは200回ほどすれば良い。
