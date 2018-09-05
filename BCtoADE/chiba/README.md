@@ -15,7 +15,7 @@
    この関数が、それぞれの最適膜面積差da_0で取りうる最小値をプロットすることについて考える。  
    daがBCモデルのデータ点を任意に取れるとすれば、第二項目はdaを頂点とするda_0の放物線を表す。  
    これをいくつかプロットして、BCモデルのエネルギープロファイルと重ねてみる。
-   ![ADE_energy_profile](https://github.com/chibatoshikaze/SurfaceEvolver/blob/patch-4/BCtoADE/chiba/ADE_para.png)
+   ![ADE_energy_profile](https://github.com/chibatoshikaze/SurfaceEvolver/blob/patch-4/BCtoADE/chiba/ADE_catenary.png)
   　
    da_0 = 0.90のとき、図の(ⅰ)、(ⅱ)をみてみよう。
    (ⅰ)は放物線q(da_0 - da_oblate)^2の点であるからda=da_oblateである。  
